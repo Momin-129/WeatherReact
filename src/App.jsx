@@ -57,7 +57,7 @@ function App() {
           ) : weather.cod == 200 ? (
             <Weather weather={weather} />
           ) : (
-            <div className="boder-2 rounded-xl md:w-96 md:h-96 bg-indigo-600 text-white mt-5 p-5 text-3xl flex flex-col items-center justify-center">
+            <div className="boder-2 rounded-xl md:w-96 md:h-96 w-80 h-72 bg-indigo-600 text-white mt-5 p-5 text-3xl flex flex-col items-center justify-center">
               <p className="text-4xl text-white font-bold">City not found</p>
             </div>
           )

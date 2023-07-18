@@ -39,7 +39,7 @@ function App() {
             value={input}
             onChange={(e) => {
               setInput(e.target.value);
-              if (/^[a-zA-Z]+$/.test(e.target.value)) setSearch(false);
+              if (/^[a-zA-Z\s]+$/.test(e.target.value)) setSearch(false);
               else setSearch(true);
             }}
           />
